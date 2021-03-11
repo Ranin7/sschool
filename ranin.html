@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="ranin.css">
+		<title>School Managment System</title>
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<!-- student name -->
+				<div class="from-control">
+					<label for="name">Student Name</label> <br>
+					<input type="text" id="name" placeholder="name" />
+				</div>
+				<!-- student name -->
+
+				<!-- student id -->
+				<div class="from-control">
+					<label for="idNumber">Student ID</label> <br>
+					<input type="number" id="idNumber" placeholder="411420876" />
+				</div>
+				<!-- student id -->
+
+				<!-- student gdpa -->
+				<div class="from-control">
+					<label for="gdpa">Student GDPA</label> 
+					<br>
+					<input type="number" id="gdpa" placeholder="3.50" />
+				</div>
+				<!-- student gdpa -->
+
+				<button id="submit" type="submit">Add Student</button>
+			</form>
+
+		</div>
+		
+       
+		
+    	
+
+
+		<!--Delete -->
+		<div  class="from-control column">
+			<label for="idNumber">Student ID to delete</label> <br>
+			<input type="number" id="delete" placeholder="" />
+			<button id="submit" onclick="Deletestudent();" >delete</button>
+		</div>
+		<!-- Delete end -->
+		
+		
+		<!-- Update -->
+		<div class="from-control column">
+			<label for="idNumber"> Student ID to update</label> <br>
+			<input type="number" id="update" placeholder="" />
+			<button id="submit" onclick="check();" >check</button><br>
+			<div id="showlist">
+
+			<label for="name">Student Name</label> <br>
+			<input type="text" id="UpName" placeholder="name" />
+			<br>
+			<label for="idNumber">Student ID</label> <br>
+			<input type="number" id="UpId" placeholder="411420876" />
+			<br>
+			<label for="gdpa">Student GDPA</label> 
+			<br>
+			<input type="number" id="UpGdpa" placeholder="3.50" />
+			<br>
+			<button id="submit" onclick="Update();" >Update</button>
+		    </div>
+		</div>
+		<!-- Update end -->
+		<!--print-->
+		
+		<button id="submit" onclick="Showlist();" >print all studant</button>
+		<div id= "names" class="from-control column">		
+		</div>
+		<!-- print end -->
+
+
+		<script src="ranin.js"></script>
+	</body>
+</html>
